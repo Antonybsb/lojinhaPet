@@ -1,0 +1,277 @@
+/*============ BOTÕES ============*/
+.slider .priv_arrow {
+  position: absolute;
+  top: 30%;
+  left: -60px;
+  color: var(--color-secondary);
+  width: 50px;
+  border-radius: 40%;
+  text-align: center;
+  line-height: 43px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.slider .next_arrow {
+  position: absolute;
+  top: 30%;
+  right: -60px;
+  color: var(--color-secondary);
+  width: 50px;
+  border-radius: 40%;
+  text-align: center;
+  line-height: 43px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.slider .priv_arrow:hover {
+  position: absolute;
+  top: 30%;
+  left: -60px;
+  color: #fff;
+  width: 50px;
+  background-color: var(--color-secondary);
+  border-radius: 40%;
+  text-align: center;
+  line-height: 43px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.slider .next_arrow:hover {
+  position: absolute;
+  top: 30%;
+  right: -60px;
+  color: #fff;
+  width: 50px;
+  background-color: var(--color-secondary);
+  border-radius: 40%;
+  text-align: center;
+  line-height: 43px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-body .card-price {
+  color: var(--color-secondary) !important;
+}
+
+/*============ CAROUSEL  ALIMENTOS ============*/
+
+.section-alimentos {
+  display: block;
+  overflow: hidden;
+  max-height: 547px;
+}
+
+.slider {
+  display: block;
+  max-height: 495px;
+}
+.slider .card-alimentos {
+  border: none;
+  max-height: 491px;
+  /* border: 1px solid var(--color-separate); */
+}
+
+.slider .card-alimentos {
+  margin-right: 10px;
+}
+
+.card-alimentos {
+  padding: 10px;
+  height: 250px;
+  max-width: 250px !important;
+  max-height: 450px;
+  overflow: hidden;
+  box-sizing: border-box; /* Define o modelo de caixa para incluir a borda */
+  border: 1px solid transparent !important;
+  border-radius: 5px;
+  transition: border 0.1s;
+}
+
+.card-alimentos:hover {
+  border: 1px solid var(--color-separate) !important;
+}
+
+.card-alimentos .card-img-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 248px;
+}
+
+.card .card-title {
+  color: var(--color-blue);
+}
+
+.card-text {
+  height: 72px;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  overflow: hidden;
+}
+
+.card-alimentos .card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card-alimentos:hover .card-footer {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*============ BOTÕES 2 ============*/
+.slider2 .priv_arrow {
+  position: absolute;
+  top: 30%;
+  left: -60px;
+  color: var(--color-secondary);
+  width: 50px;
+  border-radius: 40%;
+  text-align: center;
+  line-height: 43px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.slider2 .next_arrow {
+  position: absolute;
+  top: 30%;
+  right: -60px;
+  color: var(--color-secondary);
+  width: 50px;
+  border-radius: 40%;
+  text-align: center;
+  line-height: 43px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.slider2 .priv_arrow:hover {
+  position: absolute;
+  top: 30%;
+  left: -60px;
+  color: #fff;
+  width: 50px;
+  background-color: var(--color-secondary);
+  border-radius: 40%;
+  text-align: center;
+  line-height: 43px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.slider2 .next_arrow:hover {
+  position: absolute;
+  top: 30%;
+  right: -60px;
+  color: #fff;
+  width: 50px;
+  background-color: var(--color-secondary);
+  border-radius: 40%;
+  text-align: center;
+  line-height: 43px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/*============ CAROUSEL  ALIMENTOS ============*/
+
+/*============ CAROUSEL  MEDICAMENTOS ============*/
+
+.section-medicamentos {
+  display: block;
+  overflow: hidden;
+  max-height: 547px;
+}
+
+.slider2 {
+  display: block;
+  max-height: 495px;
+}
+.slider2 .card-medicamentos {
+  border: none;
+  max-height: 491px;
+  /* border: 1px solid var(--color-separate); */
+}
+
+.slider2 .card-medicamentos {
+  margin-right: 10px;
+}
+
+.card-medicamentos {
+  padding: 10px;
+  height: 250px;
+  max-width: 250px !important;
+  max-height: 450px;
+  overflow: hidden;
+  box-sizing: border-box; /* Define o modelo de caixa para incluir a borda */
+  border: 1px solid transparent !important;
+  border-radius: 5px;
+  transition: border 0.1s;
+}
+
+.card-medicamentos:hover {
+  border: 1px solid var(--color-separate) !important;
+}
+
+.card-medicamentos .card-img-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 248px;
+}
+
+.card-medicamentos .card-title {
+  color: var(--color-blue);
+}
+
+.card-text {
+  height: 72px;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  overflow: hidden;
+}
+
+.card-medicamentos .card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card-medicamentos:hover .card-footer {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

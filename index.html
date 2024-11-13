@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/carouselProducts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- imports slick carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+
+
+
+  <!-- ============ MENSAGEM ============-->
+  <div class="container-mensagens" id="container-mensagens">
+
+  </div>
+
+  <!-- ============ BOTÃO DE CARRINHO FLUTUANTE ============-->
+  <a class="btn-verde botao-carrinho hidden" onclick="carousel.metodos.abrirCarrinho(true)">
+    <div class="badge-total-carrinho">0</div>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </a>
+
+  <!-- ============ SECTION SECTION NAVBAR ============-->
+
+  <section class="header  ">
+    <section class="avisos">
+      <div id="carouselExampleSlidesOnly" class="carouselAvisos carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner1 carousel-inner" style="height: 48px;">
+          <div class="carousel-item active">
+            <div class="aviso1">
+              <span>
+                <p>10% de desconto</p>
+              </span>
+              <small>
+                <p>*Nas compras feitas pelo site.</p>
+              </small>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="aviso2">
+              <span>
+                <p>Entrega grátis para compras acima de R$ 399,00</p>
+              </span>
+              <small>
+                <p>*Válido apenas para o DF.</p>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo/oTratador.png" alt="Bootstrap" height="70">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0 fw-normal ">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#sectionAlimentos">Alimentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sectionMedicamentos">Medicamentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#ofertas">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#servicos">Serviços</a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-success btn-icon btn-lg btn-verde" onclick="carousel.metodos.abrirCarrinho(true)">
+            Meu Carrinho <span class="icon ">
+              <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- ============ SECTION CAROUSEL OFERTAS ============-->
+  <section class="carouselOfertas">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carouselTop/066d9d85-9360-4915-b729-ba4d7903c949___5772598f97d141ff590691e4250e2ce4.webp"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carouselTop/08012023_ferias_1152_X310_c45e133064.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carouselTop/08012023_petisco_1152_X310_594b676c38.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- ============ SECTION AVISOS 2 ============-->
+  <section class="sectionMarginTop ">
+    <div class="container text-center ">
+      <div class="row borda-fixa-externa p-2 d-flex justify-content-around">
+        <div class="col d-flex justify-content-around">
+          <div class="card zoom-div borda-fixa"
+            style="width: 20rem; height: 5rem; justify-content: center; align-items: center;">
+            <div class="card-body  d-flex" style="align-items: center;">
+              <div>
+                <i class="fa-solid fa-truck-fast" style="font-size: 40px; color: var(--color-red);"></i>
+              </div>
+              <h5 class="card-title mx-3 fs-5" style="color: var(--color-red);">Frete Grátis!
+                <br> <small class="fs-6 fw-normal" style="color: var(--color-text);">*Confira as regras.</small>
+              </h5>
+
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-around">
+          <div class="card zoom-div borda-fixa"
+            style="width: 20rem; height: 5rem; justify-content: center; align-items: center;">
+            <div class="card-body  d-flex" style="align-items: center;">
+              <div>
+                <i class="fa-solid fa-laptop" style="font-size: 40px; color: var(--color-red);"></i>
+              </div>
+              <h5 class="card-title mx-3 fs-5" style="color: var(--color-red);">10% de desconto!
+                <br> <small class="fs-6 fw-normal" style="color: var(--color-text);">*Comprando pelo site.</small>
+              </h5>
+
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-around">
+          <div class="card zoom-div borda-fixa"
+            style="width: 20rem; height: 5rem; justify-content: center; align-items: center;">
+            <div class="card-body  d-flex" style="align-items: center;">
+              <div>
+                <i class="fa-solid fa-comment-sms" style="font-size: 40px; color: var(--color-red);"></i>
+              </div>
+              <h5 class="card-title mx-3 fs-5" style="color: var(--color-red);">Compre e Retire!
+                <br> <small class="fs-6 fw-normal" style="color: var(--color-text);">*Compre pelo zap e retire na
+                  loja.</small>
+              </h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============ CAROUSEL  ALIMENTOS ============-->
+
+  <section class="section-alimentos sectionMarginTop active" id="sectionAlimentos">
+    <div class="container">
+
+      <div class="row animate__animated animate__fadeIn">
+        <div class="col text-start">
+          <p>
+            <span class="fs-4 fw-medium ">Ofertas imperdíveis!</span>
+            <i class="fa-solid fa-tag" style="font-size: 20px; color: var(--color-secondary);"></i>
+          </p>
+        </div>
+        <div class="col  text-end">
+          <p>
+            <span class="fs-4 fw-medium">Seu pet vai amar!</span>
+            <i class="fa-solid fa-heart" style="font-size: 20px; color: var(--color-red);"></i>
+          </p>
+        </div>
+      </div>
+
+      <div class="slider" id="itensCarousel">
+
+
+
+
+        <!-- <div class="card-alimentos ">
+          <img src="./img/carouselProducts/156616-1600-1600.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-alimentos">
+          <img src="./img/carouselProducts/157083-1600-1600.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer ">
+            <div class="row mx-auto py-2 ">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-alimentos">
+          <img src="./img/carouselProducts/157164-500-auto.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-alimentos">
+          <img src="./img/carouselProducts/157456-800-800.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-alimentos">
+          <img src="./img/carouselProducts/159208-500-auto.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-alimentos">
+          <img src="./img/carouselProducts/163290-1600-1600.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-alimentos">
+          <img src="./img/carouselProducts/171470-1600-1600.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-alimentos">
+          <img src="./img/carouselProducts/172450-1600-1600.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARCEIROS ============-->
+
+  <section class="sectionMarginTop">
+    <div class="parceiro container">
+      <div class="row">
+        <div class="col text-start">
+          <p>
+            <span class="fs-4 fw-medium">Marcas que os pets se amarram!</span>
+            <i class="fa-solid fa-heart" style="font-size: 20px; color: var(--color-red);"></i>
+          </p>
+        </div>
+      </div>
+      <div class="row borda-fixa-externa p-2">
+        <div class="col borda-fixa zoom-div">
+          <img src="./img/parceiros/916575c7-04e4-4332-abc8-76b8df0d2fd8___a8543a38e37a2ddf9bc808a6af1d5230.webp"
+            alt="">
+        </div>
+        <div class="col borda-fixa ms-2 zoom-div">
+          <img src="./img/parceiros/605f7403-1600-4ca2-a78f-e18b927f57f1___d37cf2066ed5146186ea90c8db89242b.webp"
+            alt="">
+        </div>
+        <div class="col borda-fixa ms-2 zoom-div">
+          <img src="./img/parceiros/ac8c690f-f212-4754-88d5-558b86e8adf5___837fb69939f5977ed315540d51bb5cad.webp"
+            alt="">
+        </div>
+        <div class="col borda-fixa ms-2 zoom-div">
+          <img src="./img/parceiros/916575c7-04e4-4332-abc8-76b8df0d2fd8___a8543a38e37a2ddf9bc808a6af1d5230.webp"
+            alt="">
+        </div>
+        <div class="col borda-fixa ms-2 zoom-div">
+          <img src="./img/parceiros/605f7403-1600-4ca2-a78f-e18b927f57f1___d37cf2066ed5146186ea90c8db89242b.webp"
+            alt="">
+        </div>
+        <div class="col borda-fixa ms-2 zoom-div">
+          <img src="./img/parceiros/ac8c690f-f212-4754-88d5-558b86e8adf5___837fb69939f5977ed315540d51bb5cad.webp"
+            alt="">
+        </div>
+        <div class="col borda-fixa ms-2 zoom-div">
+          <img src="./img/parceiros/916575c7-04e4-4332-abc8-76b8df0d2fd8___a8543a38e37a2ddf9bc808a6af1d5230.webp"
+            alt="">
+        </div>
+        <div class="col borda-fixa ms-2 zoom-div">
+          <img src="./img/parceiros/605f7403-1600-4ca2-a78f-e18b927f57f1___d37cf2066ed5146186ea90c8db89242b.webp"
+            alt="">
+        </div>
+        <div class="col borda-fixa ms-2 zoom-div">
+          <img src="./img/parceiros/ac8c690f-f212-4754-88d5-558b86e8adf5___837fb69939f5977ed315540d51bb5cad.webp"
+            alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAROUSEL MEDICAMENTOS ============-->
+
+  <section class="section-medicamentos sectionMarginTop" id="sectionMedicamentos">
+    <div class="container">
+
+      <div class="row">
+        <div class="col text-start">
+          <p>
+            <span class="fs-4 fw-medium">Cuidados com a saúde do seu amigão!</span>
+            <i class="fa-solid fa-stethoscope" style="font-size: 20px; color: var(--color-red);"></i>
+          </p>
+        </div>
+      </div>
+
+      <div class="slider2" id="itensCarousel2">
+
+        <!-- <div class="card-medicamentos">
+          <img src="./img/medicamentos/small-638127564646633968-822742.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-medicamentos">
+          <img src="./img/medicamentos/small-638127564455528294-822683.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-medicamentos">
+          <img src="./img/medicamentos/small-638127564188208027-822627.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-medicamentos">
+          <img src="./img/medicamentos/small-638127564819810295-822814.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-medicamentos">
+          <img src="./img/medicamentos/small-638127761946830078-822716.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-medicamentos">
+          <img src="./img/medicamentos/small-638128332100813027-822933.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-medicamentos">
+          <img src="./img/medicamentos/small-638127564455528294-822683.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-medicamentos">
+          <img src="./img/medicamentos/small-638128523761860481-823036.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-medicamentos">
+          <img src="./img/medicamentos/small-638194985309615029-822982.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-body-secondary">Premier</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural This is a wider card with supporting text below as a
+              natural lead-in to.to.to.to.to.
+              wider card with supporting text below as a natural
+            </p>
+            <h5 class="card-title" style="color: var(--color-secondary);">R$ 45.90 </h5>
+          </div>
+          <div class="card-footer">
+            <div class="row mx-auto py-2">
+              <div class="col ">
+                <div class="quantidade">
+                  <input class="btn btn-primary menos"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='-' />
+                  <input class="btn btn-primary text"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                  <input class="btn btn-primary mais"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="button" value='+' />
+                  <button class="btn btn-success"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                    type="submit">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ OFERTAS DA SEMANA ============-->
+  <section id="ofertas" class="sectionMarginTop">
+    <div class="container">
+
+      <div class="row ">
+        <div class="col text-start ">
+          <p>
+            <span class="fs-4 fw-medium ">Ofertas da semana.</span>
+            <i class="fa-solid fa-comments-dollar" style="font-size: 20px; color: var(--color-secondary);"></i>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col zoom-div">
+          <img style="width: 300px; height: 300px;"
+            src="./img/ofertasSemana/3c16c1c6-1d47-420c-b3ff-098a10435ed9___86bf1f31cc890b631a449210c99b00a7.webp"
+            alt="">
+        </div>
+        <div class="col zoom-div">
+          <img style="width: 300px; height: 300px;"
+            src="./img/ofertasSemana/4233c606-d711-4d12-b888-8733a2abb58a___02e6562bc9efaf214627643355bf8221.webp"
+            alt="">
+        </div>
+        <div class="col zoom-div">
+          <img style="width: 300px; height: 300px;"
+            src="./img/ofertasSemana/a9179c21-f499-4140-929e-bbd5165742a9___ca41acf8b93c1b4bfb3a0109ee165bb5.webp"
+            alt="">
+        </div>
+        <div class="col zoom-div">
+          <img style="width: 300px; height: 300px;"
+            src="./img/ofertasSemana/cb09983f-9ccd-4e6c-938d-778659ea779d___8bc7901fae96a4ae2795a99ab6f693fd.webp"
+            alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SERVIÇOS ============-->
+  <section id="servicos" class="sectionMarginTop">
+
+
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col text-start">
+          <p>
+            <span class="fs-4 fw-medium">Serviços.</span>
+            <i class="fa-solid fa-note-sticky" style="font-size: 20px; color: var(--color-secondary);"></i>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col zoom-div">
+          <img style="height: 330px;"
+            src="./img/servicos/7b197f75-d846-4d36-a3cf-8648e11ca275___4638123da66739a08a577463678e6e64.webp" alt="">
+        </div>
+        <div class="col zoom-div">
+          <img style="height: 330px;"
+            src="./img/servicos/92acc35e-1cd0-4aef-8810-77d7e5390ec7___80cb1f6ebc5cd229c1ff75c9e0c13961.webp" alt="">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============ FOOTER ============-->
+  <section class="sectionMarginTop">
+    <div class="redessociais">
+      <div class="container">
+        <div class="row">
+          <div class="row">
+            <div class="col">
+              <p class="  text-center">
+                <span class="fs-4 fw-medium">Siga O Tratador nas redes sociais</span>
+                <i class="fa-solid fa-mobile" style="font-size: 20px; color: var(--color-red);"></i>
+              <div class="row">
+                <div class="col   text-end">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram" style="font-size: 30px; color: var(--color-secondary);"></i>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <i class="fa-brands fa-facebook" style="font-size: 30px; color: var(--color-secondary);"></i>
+                  </a>
+                </div>
+              </div>
+              </p>
+            </div>
+            <div class="col text-center">
+              <p>
+                <span class="fs-4 fw-medium">Formas de pagamentos:</span>
+                <i class="fa-solid fa-money-check-dollar" style="font-size: 20px; color: var(--color-secondary);"></i>
+              <div class="row">
+                <div class="col">
+                  <img src="./img/formasDePagamento/payment-footer.png" alt="">
+                </div>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row sectionMarginTop container">
+        <div class="col">
+          <p class="text-center">
+            <span class="fs-5 fw-small"> &copy O Tratador - Comércio de Produtos Agropecuários Ltda</span>
+          <p class="text-center fw-light">
+            CNPJ: 00.000.000/0001-00 | Endereço: QNM 34 Conjunto K Lote 42 Loja 01, M Norte, Taguatinga - DF CEP
+            75000-000, Brasil. Todos os Direitos Reservados. Vendas sujeitas à análise e confirmação de dados.
+            Ofertas válidas enquanto durar os estoques. Em caso de divergência de preços no site, o valor válido é o
+            do carrinho de compras. Produtos, preços, ofertas e condições de pagamento são válidas exclusivamente
+            para a loja eletrônica durante o dia de hoje, sujeitas a alterações sem prévia notificação. Os preços
+            previstos no site prevalecem aos demais anunciados em outros meios de comunicação, incluindo os
+            veiculados em redes sociais, email e sites de buscas. As mercadorias em promoção têm quantidades
+            limitadas por clientes de acordo com o artigo 39 - I CDC, Lei nº. 8.078 de 11/09/90 e artigo 12 - III
+            Decreto nº. 2.181 de 20/03/97. ® 2019 - Todos os direitos reservados.
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MODAL ============-->
+  <div class="modal-full animated fadeIn hidden" id="modalCarrinho">
+    <div class="m-header">
+      <div class="container">
+        <a class="btn btn-verde btn-lg float-right" onclick="carousel.metodos.abrirCarrinho(false)">
+          Fechar
+        </a>
+        <div class="etapas">
+          <div class="etapa etapa1 active">1</div>
+          <div class="etapa etapa2 ">2</div>
+          <div class="etapa etapa3 ">3</div>
+        </div>
+        <p class="title-carrinho mt-4">
+          <b id="lblTituloEtapa">Seu carrinho:</b>
+        </p>
+      </div>
+    </div>
+    <div class="m-body">
+      <div class="container">
+        <div id="itensCarrinho" class="row mr-0 ml-0 animated fadeIn hidden">
+
+          <!--Itens do carrinho-->
+
+        </div>
+
+        <div id="localEntrega" class="row mr-0 ml-0 animated fadeIn hidden">
+          <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+            <div class="form-group container-cep">
+              <label>CEP:</label>
+              <input type="text" id="txtCEP" class="form-control">
+              <a class="btn btn-yellow btn-sm" onclick="carousel.metodos.buscarCep()"><i class="fa fa-search"></i></a>
+            </div>
+          </div>
+
+          <div class="col-8 no-mobile"></div>
+
+          <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label>Endereço:</label>
+              <input type="text" id="txtEndereco" class="form-control">
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+            <div class="form-group">
+              <label>Bairro:</label>
+              <input type="text" id="txtBairro" class="form-control">
+            </div>
+          </div>
+          <div class="col-12 col-lg-2 col-md-2 col-sm-12">
+            <div class="form-group">
+              <label>Número:</label>
+              <input type="text" id="txtNumero" class="form-control">
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+            <div class="form-group">
+              <label>Cidade:</label>
+              <input type="text" id="txtCidade" class="form-control">
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+            <div class="form-group">
+              <label>Complemento:</label>
+              <input type="text" id="txtComplemento" class="form-control">
+            </div>
+          </div>
+          <div class="col-12 col-lg-2 col-md-2 col-sm-12">
+            <div class="form-group">
+              <label>UF:</label>
+              <select name="" id="ddlUf" class="form-control">
+                <option value="-1">...</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="resumoCarrinho" class="row mr-0 ml-0 animated fadeIn hidden">
+          <div class="col-12">
+            <p class="title-carrinho mt-4">
+              <b>Itens do pedido</b>
+            </p>
+          </div>
+
+          <div class="col-12">
+            <div class="row" id="listaItensResumo">
+
+            </div>
+          </div>
+
+          <div class="col-12">
+            <p class="title-carrinho mt-4">
+              <b>Local da entrega</b>
+            </p>
+          </div>
+
+          <div class="col-12 item-carrinho resumo">
+            <div class="img-map">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div class="dados-produto">
+              <p class="texto-endereco">
+                <b id="resumoEndereco"></b>
+              </p>
+              <p class="cidade-endereco" id="cidadeEndereco">
+
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="m-footer">
+      <div class="container">
+        <div class="container-total text-right mb-4">
+          <p class="mb-0">
+            <span>Subtotal</span>
+            <span id="lblSubtotal">R$ 0,00</span>
+          </p>
+          <p class="mb-0 texto-entrega">
+            <span><i class="fas fa-motorcycle"></i> Entrega:</span>
+            <span id="lblValorEntrega">+ R$ 0,00</span>
+          </p>
+          <p class="mb-0 texto-total">
+            <span><b>Total:</b></span>
+            <span class="valor-total"><b id="lblValorTotal">R$ 0,00</b></span>
+          </p>
+        </div>
+        <a onclick="carousel.metodos.carregarEndereco()" class="btn btn-verde btn-lg float-right" id="btnEtapaPedido">
+          Continuar
+        </a>
+        <a onclick="carousel.metodos.resumoPedido()" class="btn btn-verde btn-lg float-right hidden"
+          id="btnEtapaEndereco">
+          Revisar pedido
+        </a>
+        <a href="#" class="btn btn-verde btn-lg float-right hidden" id="btnEtapaResumo" target="_blank">
+          Enviar pedido
+        </a>
+        <a onclick="carousel.metodos.voltarEtapa()" class="btn btn-verde btn-lg float-right mr-3 hidden" id="btnVoltar">
+          Voltar
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <a href="#top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" data-name="Layer 1">
+      <path
+        d="M17.71,11.29l-5-5a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21l-5,5a1,1,0,0,0,1.42,1.42L11,9.41V17a1,1,0,0,0,2,0V9.41l3.29,3.3a1,1,0,0,0,1.42,0A1,1,0,0,0,17.71,11.29Z" />
+    </svg>
+  </a>
+
+  <div>
+    <a href="https://api.whatsapp.com/send?phone=55###########" class="whatsapp" target="_blank">
+      <svg viewBox="0 0 52 52" width="30" height="30" fill="#ffffff">
+        <path d="M26,0C11.663,0,0,11.663,0,26c0,4.891,1.359,9.639,3.937,13.762C2.91,43.36,1.055,50.166,1.035,50.237
+    c-0.096,0.352,0.007,0.728,0.27,0.981c0.263,0.253,0.643,0.343,0.989,0.237L12.6,48.285C16.637,50.717,21.26,52,26,52
+    c14.337,0,26-11.663,26-26S40.337,0,26,0z M26,50c-4.519,0-8.921-1.263-12.731-3.651c-0.161-0.101-0.346-0.152-0.531-0.152
+    c-0.099,0-0.198,0.015-0.294,0.044l-8.999,2.77c0.661-2.413,1.849-6.729,2.538-9.13c0.08-0.278,0.035-0.578-0.122-0.821
+    C3.335,35.173,2,30.657,2,26C2,12.767,12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z" />
+        <path d="M42.985,32.126c-1.846-1.025-3.418-2.053-4.565-2.803c-0.876-0.572-1.509-0.985-1.973-1.218
+    c-1.297-0.647-2.28-0.19-2.654,0.188c-0.047,0.047-0.089,0.098-0.125,0.152c-1.347,2.021-3.106,3.954-3.621,4.058
+    c-0.595-0.093-3.38-1.676-6.148-3.981c-2.826-2.355-4.604-4.61-4.865-6.146C20.847,20.51,21.5,19.336,21.5,18
+    c0-1.377-3.212-7.126-3.793-7.707c-0.583-0.582-1.896-0.673-3.903-0.273c-0.193,0.039-0.371,0.134-0.511,0.273
+    c-0.243,0.243-5.929,6.04-3.227,13.066c2.966,7.711,10.579,16.674,20.285,18.13c1.103,0.165,2.137,0.247,3.105,0.247
+    c5.71,0,9.08-2.873,10.029-8.572C43.556,32.747,43.355,32.331,42.985,32.126z M30.648,39.511
+    c-10.264-1.539-16.729-11.708-18.715-16.87c-1.97-5.12,1.663-9.685,2.575-10.717c0.742-0.126,1.523-0.179,1.849-0.128
+    c0.681,0.947,3.039,5.402,3.143,6.204c0,0.525-0.171,1.256-2.207,3.293C17.105,21.48,17,21.734,17,22c0,5.236,11.044,12.5,13,12.5
+    c1.701,0,3.919-2.859,5.182-4.722c0.073,0.003,0.196,0.028,0.371,0.116c0.36,0.181,0.984,0.588,1.773,1.104
+    c1.042,0.681,2.426,1.585,4.06,2.522C40.644,37.09,38.57,40.701,30.648,39.511z" />
+      </svg>
+    </a>
+  </div>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+    integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <script src="./js/dados.js"></script>
+  <script src="./js/jquery-3.7.1.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/carousel.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/slick-init.js"></script>
+
+  <script>new WOW().init();</script>
+
+</body>
+
+</html>
